@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "product_id": "dentist",
+  "product_name": "DentistTasksAI",
+  "official_domain": "dentisttasksai.com",
+  "official_github_repo": "https://github.com/laudoluxDev/dentisttasksai-mcp",
+  "official_package": "@tasksai/install",
+  "installer": {
+    "preferred": "npx",
+    "npx": {
+      "command": "npx",
+      "args": [
+        "@tasksai/install",
+        "dentist",
+        "--source",
+        "https://github.com/laudoluxDev/dentisttasksai-mcp"
+      ],
+      "requires": [
+        "node",
+        "npm",
+        "npx"
+      ]
+    }
+  },
+  "supported_clients": [
+    "claude_desktop",
+    "cursor",
+    "windsurf",
+    "codex"
+  ],
+  "auth": {
+    "method": "browser_device_flow",
+    "connect_url": "https://dentisttasksai.com/connect",
+    "fallback": "license_key"
+  },
+  "security": {
+    "require_domain_verification": true,
+    "require_repo_verification": true,
+    "disallow_arbitrary_manifest_commands": true,
+    "native_installer_user_approval_required": true
+  },
+  "health_check": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "dentist",
+      "doctor"
+    ]
+  },
+  "uninstall": {
+    "command": "npx",
+    "args": [
+      "@tasksai/install",
+      "dentist",
+      "uninstall"
+    ]
+  },
+  "support": {
+    "url": "https://dentisttasksai.com/support",
+    "email": "support@dentisttasksai.com"
+  }
+}
