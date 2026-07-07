@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/laudoluxdev-dentisttasksai-mcp-badge.png)](https://mseep.ai/app/laudoluxdev-dentisttasksai-mcp)
+
 # DentistTasksAI MCP Server
 
 **200+ AI-powered administrative workflows for Dentists and dental office administrators.**
